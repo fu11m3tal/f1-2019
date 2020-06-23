@@ -1,0 +1,26 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const F1Parser_1 = require("../F1Parser");
+const PacketHeaderParser_1 = require("./PacketHeaderParser");
+const ParticipantDataParser_1 = require("./ParticipantDataParser");
+class PacketParticipantsDataParser extends F1Parser_1.F1Parser {
+    constructor(buffer, packetFormat) {
+        super();
+        this.endianess('little').nest('m_header', {
+            type: new PacketHeaderParser_1.PacketHeaderParser(packetFormat),
+        });
+        if (packetFormat === 2018) {
+            this.uint8('m_numCars');
+        }
+        else if (packetFormat === 2019) {
+            this.uint8('m_numActiveCars');
+        }
+        this.array('m_participants', {
+            length: 20,
+            type: new ParticipantDataParser_1.ParticipantDataParser(packetFormat),
+        });
+        this.data = this.fromBuffer(buffer);
+    }
+}
+exports.PacketParticipantsDataParser = PacketParticipantsDataParser;
+//# sourceMappingURL=PacketParticipantsDataParser.js.map

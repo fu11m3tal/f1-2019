@@ -1,0 +1,25 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const __1 = require("..");
+const { PACKETS } = __1.constants;
+const client = new __1.F1TelemetryClient({ port: 20777 });
+client.on(PACKETS.session, console.log);
+client.on(PACKETS.motion, console.log);
+client.on(PACKETS.lapData, console.log);
+client.on(PACKETS.event, console.log);
+client.on(PACKETS.participants, console.log);
+client.on(PACKETS.carSetups, console.log);
+client.on(PACKETS.carTelemetry, console.log);
+client.on(PACKETS.carStatus, console.log);
+client.start();
+// stops the client
+[`exit`,
+    `SIGINT`,
+    `SIGUSR1`,
+    `SIGUSR2`,
+    `uncaughtException`,
+    `SIGTERM`,
+].forEach(eventType => {
+    process.on(eventType, () => client.stop());
+});
+//# sourceMappingURL=index.js.map
