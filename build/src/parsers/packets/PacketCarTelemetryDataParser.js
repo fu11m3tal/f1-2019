@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const F1Parser_1 = require("../F1Parser");
+const CarTelemetryDataParser_1 = require("./CarTelemetryDataParser");
+const PacketHeaderParser_1 = require("./PacketHeaderParser");
+class PacketCarTelemetryDataParser extends F1Parser_1.F1Parser {
+    constructor(buffer, packetFormat) {
+        super();
+        this.endianess('little')
+            .nest('m_header', { type: new PacketHeaderParser_1.PacketHeaderParser(packetFormat) })
+            .array('m_carTelemetryData', {
+            length: 20,
+            type: new CarTelemetryDataParser_1.CarTelemetryDataParser(packetFormat),
+        })
+            .uint32le('m_buttonStatus');
+        this.data = this.fromBuffer(buffer);
+    }
+}
+exports.PacketCarTelemetryDataParser = PacketCarTelemetryDataParser;
+//# sourceMappingURL=PacketCarTelemetryDataParser.js.map
