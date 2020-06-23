@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.NATIONALITIES = void 0;
 exports.NATIONALITIES = [
     'American', 'Argentinean', 'Australian', 'Austrian',
     'Azerbaijani', 'Bahraini', 'Belgian', 'Bolivian',

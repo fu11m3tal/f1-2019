@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.F1Parser = void 0;
 const binary_parser_1 = require("binary-parser");
 class F1Parser extends binary_parser_1.Parser {
     /**

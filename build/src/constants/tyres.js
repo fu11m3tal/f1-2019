@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.TYRES = void 0;
 exports.TYRES = {
     0: { color: '#ffb3c3', name: 'Hyper Soft' },
     1: { color: '#b14ba7', name: 'Ultra Soft' },

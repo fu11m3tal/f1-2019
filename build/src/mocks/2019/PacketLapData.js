@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PACKET_LAP_DATA_PARSED_2019 = exports.PACKET_LAP_DATA_BUFFER_2019 = void 0;
 exports.PACKET_LAP_DATA_BUFFER_2019 = [
     227, 7, 1, 3, 1, 2, 82, 136, 63, 53, 198, 167, 90, 157, 225,
     89, 87, 65, 22, 1, 0, 0, 19, 0, 0, 0, 0, 37, 122, 7,

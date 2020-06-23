@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PACKET_MOTION_DATA_PARSED_2018 = exports.PACKET_MOTION_DATA_BUFFER_2018 = void 0;
 exports.PACKET_MOTION_DATA_BUFFER_2018 = [
     226, 7, 1, 0, 3, 46, 13, 215, 223, 1, 248, 134, 235, 106, 144,
     65, 126, 1, 0, 0, 0, 201, 108, 208, 194, 193, 3, 168, 194, 184,

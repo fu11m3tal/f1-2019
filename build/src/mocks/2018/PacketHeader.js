@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PACKET_HEADER_PARSED_2018 = exports.PACKET_HEADER_BUFFER_2018 = void 0;
 exports.PACKET_HEADER_BUFFER_2018 = [
     226, 7, 1, 7, 165, 249, 6, 161, 148, 177, 121, 217, 96, 254, 243,
     64, 157, 0, 0, 0, 0, 1, 1, 1, 56, 0, 230, 28, 90, 66,

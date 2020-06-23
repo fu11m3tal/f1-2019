@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PacketLapDataParser = void 0;
 const F1Parser_1 = require("../F1Parser");
 const LapDataParser_1 = require("./LapDataParser");
 const PacketHeaderParser_1 = require("./PacketHeaderParser");

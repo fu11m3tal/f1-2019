@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PACKETS = void 0;
 exports.PACKETS = {
     motion: 'motion',
     session: 'session',

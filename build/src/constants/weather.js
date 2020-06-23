@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WEATHER = void 0;
 exports.WEATHER = [
     'Clear',
     'Light Cloud',

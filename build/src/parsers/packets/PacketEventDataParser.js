@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PacketEventDataParser = void 0;
 const binary_parser_1 = require("binary-parser");
 const constants_1 = require("../../constants");
 const F1Parser_1 = require("../F1Parser");

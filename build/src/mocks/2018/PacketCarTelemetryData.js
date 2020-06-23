@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PACKET_CAR_TELEMETRY_DATA_PARSED_2018 = exports.PACKET_CAR_TELEMETRY_DATA_BUFFER_2018 = void 0;
 exports.PACKET_CAR_TELEMETRY_DATA_BUFFER_2018 = [
     226, 7, 1, 6, 3, 46, 13, 215, 223, 1, 248, 134, 121, 55, 47,
     63, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 221, 16,

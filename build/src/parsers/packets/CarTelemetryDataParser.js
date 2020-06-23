@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CarTelemetryDataParser = void 0;
 const binary_parser_1 = require("binary-parser");
 const F1Parser_1 = require("../F1Parser");
 class CarTelemetryDataParser extends F1Parser_1.F1Parser {

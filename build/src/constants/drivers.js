@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.DRIVERS = void 0;
 exports.DRIVERS = {
     0: { abbreviation: 'SAI', firstName: 'Carlos', lastName: 'Sainz' },
     1: { abbreviation: 'KVY', firstName: 'Daniil', lastName: 'Kvyat' },

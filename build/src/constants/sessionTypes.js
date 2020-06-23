@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SESSION_TYPES = void 0;
 exports.SESSION_TYPES = [
     'Unknown',
     'P1',

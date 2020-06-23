@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BUTTON_FLAGS = void 0;
 exports.BUTTON_FLAGS = {
     0x0001: 'Cross or A',
     0x0002: 'Triangle or Y',

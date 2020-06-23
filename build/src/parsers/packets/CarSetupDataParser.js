@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CarSetupDataParser = void 0;
 const F1Parser_1 = require("../F1Parser");
 class CarSetupDataParser extends F1Parser_1.F1Parser {
     constructor() {

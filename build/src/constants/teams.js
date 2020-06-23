@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.TEAMS = void 0;
 const MERCEDES_COLOR = '#00D2BE';
 const FERRARI_COLOR = '#DC0000';
 const RED_BULL_COLOR = '#1E41FF';
