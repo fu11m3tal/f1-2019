@@ -1,0 +1,72 @@
+body {
+  width: 500px;
+  height: 500px;
+}
+
+.app {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.row div {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.led-off {
+  display: flex;
+  flex: 1;
+  background-color: white;
+}
+
+.led-green {
+  display: flex;
+  flex: 1;
+  background-color: green;
+}
+
+.led-red {
+  display: flex;
+  flex: 1;
+  background-color: red;
+}
+
+
+.led-blue {
+  display: flex;
+  flex: 1;
+  background-color: blue;
+}
+
+#g1 {
+  background-color: green transparent;
+}
+
+.box {
+  flex: 1;
+  border-style: solid;
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 500px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#box-1 {
+  order: 1;
+}
+
+#box-2 {
+  order: 2;
+}
+#box-3 {
+  order: 3;
+}

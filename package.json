@@ -12,12 +12,23 @@
     "url": "https://github.com/jonybur/f1-telemetry-client.git"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "binary-parser": "^1.5.0",
     "f1-telemetry-client": "^0.1.16",
     "node": "^14.4.0",
     "pigpio": "^3.2.3",
     "struct": "^0.0.12",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "@material-ui/core": "^4.10.2",
+    "@material-ui/icons": "^4.9.1",
+    "apexcharts": "^3.19.3",
+    "finnhub": "^1.1.7",
+    "material-ui-popup-state": "^1.6.1",
+    "mysql": "^2.18.1",
+    "pg": "^8.2.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "websocket": "^1.0.31"
   },
   "devDependencies": {
     "@types/binary-parser": "^1.5.0",
@@ -28,12 +39,24 @@
     "husky": "^1.3.1",
     "jest": "^26.0.1",
     "lint-staged": ">=8",
-    "ts-jest": "^26.1.0"
+    "ts-jest": "^26.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.21",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   },
   "scripts": {
     "prepublishOnly": "npm run build",
     "start": "npm run build && node build/src/playground/index.js",
     "build": "tsc",
+    "buil": "webpack -d --watch",
+    "star": "nodemon server/index.js",
     "build:link": "npm run build && npm link",
     "type-check:watch": "npm run type-check -- --watch",
     "type-check": "tsc --noEmit",

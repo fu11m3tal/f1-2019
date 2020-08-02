@@ -1,7 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("..");
 const { PACKETS } = __1.constants;
+const axios_1 = __importDefault(require("axios"));
 // const Gpio = require('pigpio').Gpio;
 // const LCD = require('raspberrypi-liquid-crystal');
 // const lcd = new LCD( 1, 0x27, 16, 2 );
@@ -16,9 +20,30 @@ const client = new __1.F1TelemetryClient({ port: 20777 });
 // });
 client.on(PACKETS.carTelemetry, (data) => {
     var { m_carTelemetryData } = data;
-    for (var i = 0; i < m_carTelemetryData.length; i++) {
-        console.log(m_carTelemetryData[i].m_revLightsPercent);
-    }
+    // console.log("data", m_carTelemetryData[0].m_gear)
+    // axios.post('http://localhost:3000/api/f1Client', {
+    //   Name: 'Fred',
+    //   Age: '23'
+    // })
+    // .then(function (response) {
+    //   console.log(response);
+    // })
+    // .catch(error => (console.log(error)))
+    // axios.get('http://localhost:3000/api/f1Client')
+    // .then(function (response) {
+    //   console.log(response.data);
+    // })
+    // .catch(error => (console.log(error)))
+    axios_1.default.post('http://localhost:3000/api/f1Client', {
+        m_carTelemetryData: m_carTelemetryData[0]
+    })
+        .then(function (response) {
+        console.log(response.data);
+    })
+        .catch(error => (console.log(error)));
+    // for(var i = 0; i < m_carTelemetryData.length; i++) {
+    //   console.log(m_carTelemetryData[i].m_revLightsPercent);
+    // }
     //     var a = new Gpio(17, {mode: Gpio.OUTPUT});
     //     var b = new Gpio(27, {mode: Gpio.OUTPUT});
     //     var c = new Gpio(22, {mode: Gpio.OUTPUT});
